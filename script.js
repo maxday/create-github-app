@@ -1,5 +1,4 @@
 const ready = () => {
-    console.log('ready');
     document.getElementById("inputSubmit").addEventListener('click', createAppClicked);
     generateAppName();
 }
@@ -11,7 +10,6 @@ const generateAppName = () => {
 }
 
 const createAppClicked = () => {
-    console.log("clicked");
     const name = document.getElementById('inputAppName').value;
     const hookUrl = document.getElementById('inputWebhookUrl').value;
     const appUrl = document.getElementById('inputAppUrl').value;
@@ -38,9 +36,4 @@ const createAppClicked = () => {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', ready, false);
-
-
-
-
