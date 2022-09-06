@@ -6,7 +6,7 @@ const ready = () => {
 const generateAppName = () => {
     const randomSufix = (Math.random() + 1).toString(36).substring(2);
     const inputAppName = document.getElementById('inputAppName');
-    inputAppName.value = `dash-serverless-workshop-${randomSufix}`; 
+    inputAppName.value = `dash-workshop-${randomSufix}`; 
 }
 
 const createAppClicked = () => {
