@@ -1,5 +1,4 @@
 const ready = () => {
-    console.log('ready');
     document.getElementById("inputSubmit").addEventListener('click', createAppClicked);
     generateAppName();
 }
@@ -7,11 +6,10 @@ const ready = () => {
 const generateAppName = () => {
     const randomSufix = (Math.random() + 1).toString(36).substring(2);
     const inputAppName = document.getElementById('inputAppName');
-    inputAppName.value = `dash-serverless-workshop-${randomSufix}`; 
+    inputAppName.value = `dash-workshop-${randomSufix}`; 
 }
 
 const createAppClicked = () => {
-    console.log("clicked");
     const name = document.getElementById('inputAppName').value;
     const hookUrl = document.getElementById('inputWebhookUrl').value;
     const appUrl = document.getElementById('inputAppUrl').value;
@@ -38,9 +36,4 @@ const createAppClicked = () => {
     }
 }
 
-
 document.addEventListener('DOMContentLoaded', ready, false);
-
-
-
-
